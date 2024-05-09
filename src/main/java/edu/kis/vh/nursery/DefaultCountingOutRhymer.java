@@ -21,17 +21,6 @@ public class DefaultCountingOutRhymer {
         return num11;
     }
 
-    public static void setNumber12(int number12) {
-        DefaultCountingOutRhymer.number12 = number12;
-    }
-
-    public static void setNumMinus1(int numMinus1) {
-        DefaultCountingOutRhymer.numMinus1 = numMinus1;
-    }
-
-    public static void setNum11(int num11) {
-        DefaultCountingOutRhymer.num11 = num11;
-    }
 
     public int getTotal() {
         return total;
@@ -66,7 +55,4 @@ public class DefaultCountingOutRhymer {
         return numbers;
     }
 
-    public void setNumbers(int[] numbers) {
-        this.numbers = numbers;
-    }
 }
