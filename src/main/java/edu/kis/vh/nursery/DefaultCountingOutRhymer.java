@@ -2,23 +2,45 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    private static final int number12 = 12;
-    private static final int numMinus1 = -1;
-    private static final int num11 = 11;
-    private final int[] numbers = new int[number12];
+    private static int number12 = 12;
+    private static int numMinus1 = -1;
+    private static int num11 = 11;
+    private  int[] numbers = new int[number12];
 
+    private int total = numMinus1;
+
+    public static int getNumber12() {
+        return number12;
+    }
+
+    public static int getNumMinus1() {
+        return numMinus1;
+    }
+
+    public static int getNum11() {
+        return num11;
+    }
+
+    public static void setNumber12(int number12) {
+        DefaultCountingOutRhymer.number12 = number12;
+    }
+
+    public static void setNumMinus1(int numMinus1) {
+        DefaultCountingOutRhymer.numMinus1 = numMinus1;
+    }
+
+    public static void setNum11(int num11) {
+        DefaultCountingOutRhymer.num11 = num11;
+    }
 
     public int getTotal() {
         return total;
     }
 
-    private int total = numMinus1;
-
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
     }
-
 
     public boolean callCheck() {
         return total == numMinus1;
@@ -40,4 +62,11 @@ public class DefaultCountingOutRhymer {
         return numbers[total--];
     }
 
+    public int[] getNumbers() {
+        return numbers;
+    }
+
+    public void setNumbers(int[] numbers) {
+        this.numbers = numbers;
+    }
 }
